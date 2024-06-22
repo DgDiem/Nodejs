@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/cart.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,400;0,500;1,200&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<body>
+<div class="container">
+    <div class="header">
+        <div class="header-top">
+            <div class="logo-header">
+                <img src="assets/img/logo3.png" alt="logo">
+            </div>
+            <div class="row-header">
+                <form class="search-form">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm">
+                    <button type="button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="title-rigth">
+                <li><a href="#" class="">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0880 2308</span>
+                </a></li>
+            </div>
+            <div class="title-rigth">
+                <li><a href="#" class="">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Tư vấn miễn phí</span>   
+                </a></li>
+            </div>
+            <div class="title-rigth">
+                <li><a href="#" class="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Tìm kiếm cửa hàng</span>   
+                </a></li>
+            </div>
+            
+        </div>
+        <div class="menu-header">
+            <div class="row-menu-header">
+                <div class="menu-left">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Bài viết</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </div>
+                <div class="content-header">
+                    <!-- <div class="taikhoan-header"> -->
+                        <li><a href="./login.html" class="nav-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a></li>
+                    <!-- </div> -->
+                    <!-- <div class="taikhoan-header"> -->
+                        <li><a href="#" class="nav-link">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Giỏ hàng</span></a></li>
+                    <!-- </div> -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- thanh toán -->
+
+    <!-- <div class="checkout">
+        <div class="checkout-container">
+            <div class="checkout-left">
+                <div class="checkout-title">
+                    <h3>| Thanh Toán</h3>
+                </div>
+                
+            <div class="checkout-right">
+                
+    
+            </div>
+        </div>
+    </div> -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="active">Thanh toán</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Li's Breadcrumb Area End Here -->
+    <!--Checkout Area Strat-->
+    <div class="checkout-area pt-60 pb-30">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <form action="#">
+                        <div class="checkbox-form">
+                            <h3>Chi tiết thanh toán</h3>
+                            <div class="row-box">
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>Họ và tên<span class="required">*</span></label>
+                                        <input placeholder type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Số điện thoại <span class="required">*</span></label>
+                                        <input placeholder type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Địa chỉ email <span class="required">*</span></label>
+                                        <input placeholder type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>Địa chỉ<span class="required">*</span></label>
+                                        <input placeholder type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list create-acc">
+                                        <input id="cbox" type="checkbox">
+                                        <label>Tạo mới tài khoản?</label>
+                                    </div>
+                                    <div id="cbox-info" class="checkout-form-list create-account">
+                                        <p>Tạo một tài khoản bằng cách nhập thông tin dưới đây. Nếu bạn là khách hàng cũ, vui lòng đăng nhập ở đầu trang.</p>
+                                        <label>Tên đăng nhập<span class="required">*</span></label>
+                                        <input placeholder="username" type="text">
+                                        <label>Mật khẩu<span class="required">*</span></label>
+                                        <input placeholder="password" type="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="different-address">
+                                <div class="ship-different-title">
+                                    <h3>
+                                        <label>Gửi đến địa chỉ khác?</label>
+                                        <input id="ship-box" type="checkbox">
+                                    </h3>
+                                </div>
+                                <div id="ship-box-info" class="row">
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Họ và tên người nhận <span class="required">*</span></label>
+                                            <input placeholder type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Số điện thoại người nhận <span class="required">*</span></label>
+                                            <input placeholder type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Địa chỉ người nhận<span class="required">*</span></label>
+                                            <input placeholder type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-notes">
+                                    <div class="checkout-form-list">
+                                        <label>Ghi chú</label>
+                                        <textarea id="checkout-mess" cols="30" rows="10" placeholder="Ghi chú về đơn hàng của bạn."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="your-order">
+                        <h3>Đơn hàng của bạn</h3>
+                        <div class="your-order-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="cart-product-name">Sản phẩm</th>
+                                        <th class="cart-product-total">Tổng cộng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cart_item">
+                                        <td class="cart-product-name"> Áo thun<strong class="product-quantity"> × 1</strong></td>
+                                        <td class="cart-product-total"><span class="amount">200.000VNĐ</span></td>
+                                    </tr>
+                                    <tr class="cart_item">
+                                        <td class="cart-product-name"> Áo thun<strong class="product-quantity"> × 1</strong></td>
+                                        <td class="cart-product-total"><span class="amount">200.000VNĐ</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="cart-subtotal">
+                                        <th>Tổng giỏ hàng</th>
+                                        <td><span class="amount">400.000VNĐ</span></td>
+                                    </tr>
+                                    <tr class="order-total">
+                                        <th>Tổng đặt hàng</th>
+                                        <td><strong><span class="amount">400.000VNĐ</span></strong></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="payment-method">
+                            <div class="payment-accordion">
+                                <div id="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="#payment-3">
+                                            <h5 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Nhập mã giảm giá
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                            <div class="col-md-12">
+                                                <div class="checkout-form-list">
+                                                    <input placeholder type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="card">
+                                        <div class="card-header" id="#payment-2">
+                                            <h5 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Hình thức thanh toán
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="pay-th">
+                                                    <div class="pay-th-text">
+                                                        <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại.</p>
+                                                        <div class="httt">
+                                                            <input name="pttt" value="1" type="radio"><p>Thanh toán bằng thẻ tín dụng </p><img src="http://localhost/project/uploads/1.png" alt>
+                                                        </div>
+                                                        <div class="httt">
+                                                            <input name="pttt" value="2" type="radio"><p>Thanh toán bằng thẻ ATM</p>
+                                                        </div>
+                                                        <div class="httt">
+                                                            <input name="pttt" value="3" type="radio"><p>Thanh toán bằng Momo </p><img class="momo" src="http://localhost/project/uploads/2.png" alt>
+                                                        </div>
+                                                        <div class="httt">
+                                                            <input name="pttt" value="4" type="radio"><p>Thanh toán khi nhận hàng</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-button-payment">
+                                    <input value="Đặt hàng" type="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Begin Footer Static Middle Area -->
+        <div class="footer-static-middle">
+            <div class="containerr">
+                <div class="footer-logo-wrap pt-50 pb-35">
+                    <div class="row">
+                        <!-- Begin Footer Logo Area -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-logo">
+                                <img src="./assets/img/logo5.png" alt="Footer Logo">
+                            </div>
+                            <ul class="des">
+                                <li>
+                                    Địa chỉ: 
+                                    Công viên phần mềm Quang Trung, Quận 12, TP Hồ Chí Minh
+                                </li>
+                                <li>
+                                    Số điện thoại:(+123) 123 321 345
+                                </li>
+                                <li>
+                                    Email: jodd23855@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Logo Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Thông tin</h3>
+                                <ul>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Liên hệ công ty</a></li>
+                                    <li><a href="#">Liên hệ hợp tác</a></li>
+                                    <li><a href="#">Gia nhập TOTODAY</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Chính sách</h3>
+                                <ul>
+                                    <li><a href="#">Chính sách thành viên</a></li>
+                                    <li><a href="#">Chính sách hoàn tiền</a></li>
+                                    <li><a href="#">Chính sách sản phẩm</a></li>
+                                    <li><a href="#">Chính sách kiểm hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-2">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Chính sách</h3>
+                                <ul>
+                                    <li><a href="#">Chính sách thành viên</a></li>
+                                    <li><a href="#">Chính sách hoàn tiền</a></li>
+                                    <li><a href="#">Chính sách sản phẩm</a></li>
+                                    <li><a href="#">Chính sách kiểm hàng</a></li>
+                                </ul>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-static-bottom pt-55 pb-55">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Begin Footer Links Area -->
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Mua sắm trực tuyến</a></li>
+                                <li><a href="#">Khuyến mãi</a></li>
+                                <li><a href="#">Đơn hàng của tôi</a></li>
+                                <li><a href="#">Giúp đỡ</a></li>
+                                <li><a href="#">Dịch vụ khách hàng</a></li>
+                                <li><a href="#">Ủng hộ</a></li>
+                                <li><a href="#">Phổ biến nhất</a></li>
+                                <li><a href="#">Điểm đến mới</a></li>
+                                <li><a href="#">Sản phẩm đặc biệt</a></li>
+                                <li><a href="#">Nhà sản xuất</a></li>
+                                <li><a href="#">Cửa hàng của chúng tô</a></li>
+                                <li><a href="#">Vận chuyển</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Bảo hành</a></li>
+                                <li><a href="#">Hoàn tiền</a></li>
+                                <li><a href="#">Chi trả</a></li>
+                                <li><a href="#">Giảm giá</a></li>
+                                <li><a href="#">Hoàn tiền trả hàng</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links Area End Here -->
+                        <!-- Begin Footer Payment Area -->
+                        <div class="copyright text-center">
+                            <a href="#">
+                                <img src="./view/layout/images/payment/1.png" alt>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Static Bottom Area End Here -->
+    </div>
+</div>
+
+</body>
+</html>

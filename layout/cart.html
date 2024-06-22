@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,400;0,500;1,200&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<body>
+<div class="container">
+    <div class="header">
+        <div class="header-top">
+            <div class="logo-header">
+                <img src="assets/img/logo3.png" alt="logo">
+            </div>
+            <div class="row-header">
+                <form class="search-form">
+                    <input type="text" class="search-input" placeholder="Tìm kiếm">
+                    <button type="button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="title-rigth">
+                <li><a href="#" class="">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0880 2308</span>
+                </a></li>
+            </div>
+            <div class="title-rigth">
+                <li><a href="#" class="">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Tư vấn miễn phí</span>   
+                </a></li>
+            </div>
+            <div class="title-rigth">
+                <li><a href="#" class="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Tìm kiếm cửa hàng</span>   
+                </a></li>
+            </div>
+            
+        </div>
+        <div class="menu-header">
+            <div class="row-menu-header">
+                <div class="menu-left">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Bài viết</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </div>
+                <div class="content-header">
+                    <!-- <div class="taikhoan-header"> -->
+                        <li><a href="./login.html" class="nav-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                        </a></li>
+                    <!-- </div> -->
+                    <!-- <div class="taikhoan-header"> -->
+                        <li><a href="#" class="nav-link">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Giỏ hàng</span></a></li>
+                    <!-- </div> -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="active">Giỏ hàng</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Cart -->
+
+    <div class="cart">
+        <div class="shopping-cart">
+            <div class="shopping-left">
+                <div class="cart-title">
+                    <h3>| Giỏ hàng của bạn</h3>
+                </div>
+                <div class="cart-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Hình ảnh</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="./assets/img/ao1.webp" alt="" width="80px"></td>
+                                <td>Áo thun</td>
+                                <td>1</td>
+                                <td>200.000VNĐ</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Hình ảnh sản phẩm</td>
+                                <td>Áo thun</td>
+                                <td>1</td>
+                                <td>200.000VNĐ</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Hình ảnh sản phẩm</td>
+                                <td>Áo thun</td>
+                                <td>1</td>
+                                <td>200.000VNĐ</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                   
+                </div>
+                <div class="bnt-cart"><a href="./index.html"><button>Quay lại trang chủ</button></a></div>
+            </div>
+            <div class="shopping-right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Thông tin đơn hàng</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="right-text">
+                    <div class="cart-item">
+                        <div class="item-title">Tạm tính</div>
+                        <div class="item-price">200.000VNĐ</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-title">Giảm giá</div>
+                        <div class="item-price">Áp dụng tại trang thanh toán</div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-title">Phí vân chuyển </div>
+                        <div class="item-price">Được tính tại trang thanh toán</div>
+                    </div>
+                    <div class="bnt-cart-right"><a href="./checkout.html"><button>Thanh Toán</button></a></div>
+                    <div class="cart-checkou">
+                        <div class="checkou-title">Hỗ trợ nhiều phương thức thanh toán</div>
+                        <div class="checkou-img">
+                            <img src="./assets/img/money.png" alt="">
+                            <img src="./assets/img/momone.png" alt="">
+                            <img src="./assets/img/Logo-Napas.webp" alt="">
+                            <img src="./assets/img/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Begin Footer Static Middle Area -->
+        <div class="footer-static-middle">
+            <div class="containerr">
+                <div class="footer-logo-wrap pt-50 pb-35">
+                    <div class="row">
+                        <!-- Begin Footer Logo Area -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-logo">
+                                <img src="./assets/img/logo5.png" alt="Footer Logo">
+                            </div>
+                            <ul class="des">
+                                <li>
+                                    Địa chỉ: 
+                                    Công viên phần mềm Quang Trung, Quận 12, TP Hồ Chí Minh
+                                </li>
+                                <li>
+                                    Số điện thoại:(+123) 123 321 345
+                                </li>
+                                <li>
+                                    Email: jodd23855@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Footer Logo Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Thông tin</h3>
+                                <ul>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Liên hệ công ty</a></li>
+                                    <li><a href="#">Liên hệ hợp tác</a></li>
+                                    <li><a href="#">Gia nhập TOTODAY</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Chính sách</h3>
+                                <ul>
+                                    <li><a href="#">Chính sách thành viên</a></li>
+                                    <li><a href="#">Chính sách hoàn tiền</a></li>
+                                    <li><a href="#">Chính sách sản phẩm</a></li>
+                                    <li><a href="#">Chính sách kiểm hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Block Area End Here -->
+                        <!-- Begin Footer Block Area -->
+                        <div class="col-lg-2">
+                            <div class="footer-block">
+                                <h3 class="footer-block-title">Chính sách</h3>
+                                <ul>
+                                    <li><a href="#">Chính sách thành viên</a></li>
+                                    <li><a href="#">Chính sách hoàn tiền</a></li>
+                                    <li><a href="#">Chính sách sản phẩm</a></li>
+                                    <li><a href="#">Chính sách kiểm hàng</a></li>
+                                </ul>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-static-bottom pt-55 pb-55">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Begin Footer Links Area -->
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Mua sắm trực tuyến</a></li>
+                                <li><a href="#">Khuyến mãi</a></li>
+                                <li><a href="#">Đơn hàng của tôi</a></li>
+                                <li><a href="#">Giúp đỡ</a></li>
+                                <li><a href="#">Dịch vụ khách hàng</a></li>
+                                <li><a href="#">Ủng hộ</a></li>
+                                <li><a href="#">Phổ biến nhất</a></li>
+                                <li><a href="#">Điểm đến mới</a></li>
+                                <li><a href="#">Sản phẩm đặc biệt</a></li>
+                                <li><a href="#">Nhà sản xuất</a></li>
+                                <li><a href="#">Cửa hàng của chúng tô</a></li>
+                                <li><a href="#">Vận chuyển</a></li>
+                                <li><a href="#">Thanh toán</a></li>
+                                <li><a href="#">Bảo hành</a></li>
+                                <li><a href="#">Hoàn tiền</a></li>
+                                <li><a href="#">Chi trả</a></li>
+                                <li><a href="#">Giảm giá</a></li>
+                                <li><a href="#">Hoàn tiền trả hàng</a></li>
+                                <li><a href="#">Chính sách vận chuyển</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links Area End Here -->
+                        <!-- Begin Footer Payment Area -->
+                        <div class="copyright text-center">
+                            <a href="#">
+                                <img src="./view/layout/images/payment/1.png" alt>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Static Bottom Area End Here -->
+    </div>
+</div>
+
+</body>
+</html>
